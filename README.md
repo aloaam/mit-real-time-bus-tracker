@@ -1,5 +1,3 @@
-TODO change content
-
 # Real Time International Space Station Tracker
 
 ---
