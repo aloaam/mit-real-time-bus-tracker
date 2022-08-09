@@ -1,6 +1,6 @@
 TODO change content
 
-# MIT Real Time Bus Tracker Exercise
+# Real Time International Space Station Tracker
 
 ---
 
@@ -8,21 +8,22 @@ TODO change content
 
 ---
 
-This is one of the exercises of the MITxPro-MERN course, on the "Styles and Bootstap" module.
+This is one of the exercises of the MITxPro-MERN course, on the "Asynchronous Programming" module.
 
-This exercise consists of creating two eyeballs (using just CSS) and make them follow the mouse movements, as if it was a person looking at the it.
+This exercise consisted of using a map service (mapbox in this case) and to make asynchronous call to an API service. The base exercise was to track the route of a Boston bus. To improve the exercise I decided to track the movement of the International Space Station (ISS).
 
 ## Installaion
 
 ---
 
-To run this code, simply fork and clone this repo, and run the index.html file using a server (everything the repo needs to run is in the files that you will be downloading when cloning the repo).
+To run this code, simply fork and clone this repo; then run the index.html file using a server (everything the repo needs to run is in the files that you will be downloading when cloning it).
 
 ## Roadmap
 
 ---
 
-- Advertisment can be added to fund the development
+- Push signals to know when the ISS is near you.
+- Advertisment can be added to fund the development.
 
 ## ###LICENSE
 
