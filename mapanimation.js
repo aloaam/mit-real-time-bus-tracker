@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
   center: [-71.104081, 42.357575],
-  zoom: 1,
+  zoom: 12,
 });
 
 var marker = new mapboxgl.Marker()
@@ -14,12 +14,12 @@ var marker = new mapboxgl.Marker()
 
 async function run() {
   // get bus data
-  const coordinates = await getBusLocations();
+  const locations = await getBusLocations();
   console.log(new Date());
-  console.log(coordinates);
+  console.log(locations[0]["attributes"]);
 
-  let longTemp = coordinates["longitude"];
-  let latTemp = coordinates["latitude"];
+  let longTemp = locations[0]["attributes"]["longitude"];
+  let latTemp = locations[0]["attributes"]["latitude"];
   marker.setLngLat([longTemp, latTemp]);
 
   // timer
@@ -28,11 +28,10 @@ async function run() {
 
 // Request bus data from MBTA
 async function getBusLocations() {
-  // const url = "https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip";
-  const url = "http://api.open-notify.org/iss-now.json";
+  const url = "https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip";
   const response = await fetch(url);
   const json = await response.json();
-  return json.iss_position;
+  return json.data;
 }
 
 run();
