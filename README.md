@@ -4,7 +4,7 @@
 
 This is one of the exercises of the MITxPro-MERN course, on the "Asynchronous Programming" module.
 
-This exercise consisted of using a map service (mapbox in this case) and to make asynchronous call to an API service. The base exercise was to track the route of a Boston bus.
+This exercise consists of using a map service (mapbox in this case) and to make asynchronous call to an API service. With these two services, a bus route is tracked in real time.
 
 ## Installaion
 
